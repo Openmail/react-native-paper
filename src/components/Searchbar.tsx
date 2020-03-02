@@ -267,4 +267,5 @@ const styles = StyleSheet.create({
   },
 });
 
+export {Searchbar as ISearchbar}
 export default withTheme(Searchbar);
