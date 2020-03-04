@@ -71,6 +71,8 @@ type Props = React.ComponentProps<typeof TextInput> & {
    * Whether the input can have multiple lines..
    */
   multiline?: boolean;
+
+  ref: React.MutableRefObject<Searchbar>;
 };
 
 /**
@@ -267,5 +269,5 @@ const styles = StyleSheet.create({
   },
 });
 
-export {Searchbar as ISearchbar}
+export { Searchbar as ISearchbar };
 export default withTheme(Searchbar);
