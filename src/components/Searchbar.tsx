@@ -16,7 +16,7 @@ import { Theme } from '../types';
 import { IconSource } from './Icon';
 import MaterialCommunityIcon from './MaterialCommunityIcon';
 
-type Props = React.ComponentProps<typeof TextInput> & {
+type Props = React.ComponentPropsWithRef<typeof TextInput> & {
   /**
    * Accessibility label for the button. This is read by the screen reader when the user taps the button.
    */
@@ -71,6 +71,7 @@ type Props = React.ComponentProps<typeof TextInput> & {
    * Whether the input can have multiple lines..
    */
   multiline?: boolean;
+
 };
 
 /**
@@ -267,5 +268,5 @@ const styles = StyleSheet.create({
   },
 });
 
-export {Searchbar as ISearchbar}
+export { Searchbar as ISearchbar };
 export default withTheme(Searchbar);
